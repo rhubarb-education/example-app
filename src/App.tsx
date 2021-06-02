@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Link } from 'react-router-dom';
 import './App.css';
+import logo from './logo-leaf-blue.png';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header large">
+                <img src={logo} className="App-logo" alt="logo" />
+                <h1>
+                    Example Learning Module
+        </h1>
+                <p>Clicking the link below should navigate to the example topic page.</p>
+                <h1><Link to="/topic-1" className="App-link">Topic 1</Link></h1>
+            </header>
+        </div>
+    );
 }
 
 export default App;
