@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
-import logo from './logo-leaf-blue.png';
+import '../assets/css/App.css';
+import logo from '../assets/images/logo-leaf-blue.png';
+
 
 const Topic = () => {
     return (
