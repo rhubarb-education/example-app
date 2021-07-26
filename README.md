@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# Example Create React App course
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Installation
+This package uses private packages, contact Rhubarb Education to be added to the nessersary repositories.
+
+Install the dependancies:
+```
+yarn install
+```
+
+Rename the environment file (`.env.example` --> `.env`) and fill with your Conker API endpoint & course id.
+
+Build and run the course:
+```
+yarn start
+```
 
 ## Available Scripts
 
