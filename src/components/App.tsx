@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/css/App.css';
 import logo from '../assets/images/logo-leaf-blue.png';
+import ProgressButton from './ProgressButton';
 import SoundButton from './SoundButton';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                 <h1><Link to="/topic-1" className="App-link">Topic 1</Link></h1>
 
                 <SoundButton />
+                <ProgressButton />
             </header>
         </div>
     );
