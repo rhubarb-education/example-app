@@ -1,11 +1,13 @@
-import { reportAction } from 'analytics-js';
+import { Conker } from 'conker-client';
 import React from 'react';
 
-
-
-const SoundButton = () => {
+const ProgressButton = () => {
     const reportProgress = () => {
-        reportAction(process.env.REACT_APP_CONKER_COURSE_ID ?? '', 'COMPLETE_MODULE', {});
+        Conker.report(
+            Conker.generateAnonymousAgentObject("https://example.com"), 
+            Conker.verbs.PROGRESSED, 
+            Conker.generateCourseObject('https://example.com/course-1', 'Course 1', 'An example course.'),
+        );
     }
 
     return (
@@ -17,4 +19,4 @@ const SoundButton = () => {
     );
 }
 
-export default SoundButton;
+export default ProgressButton;
