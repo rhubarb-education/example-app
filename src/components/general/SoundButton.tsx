@@ -1,5 +1,4 @@
 import * as H from 'howler';
-import React from 'react';
 
 var sound = new H.Howl({
     src: ['/success.mp3'],
