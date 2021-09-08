@@ -10,7 +10,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.9",
     "@types/react-dom": "^17.0.0",
-    "conker-client": "git+ssh://git@github.com:rhubarb-education/conker-client.git#xapi",
+    "conker-client": "git+ssh://git@github.com:rhubarb-education/client.git",
     "history": "^5.0.0",
     "howler": "^2.2.1",
     "react": "^17.0.2",
