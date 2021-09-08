@@ -9,7 +9,7 @@ const config: IConkerConfig = {
     endpoint: process.env.REACT_APP_CONKER_URL ?? '',
     key: process.env.REACT_APP_CONKER_CLIENT_KEY ?? '',
     secret: process.env.REACT_APP_CONKER_CLIENT_SECRET ?? '',
-}
+};
 
 Conker.init(config);
 
@@ -21,5 +21,5 @@ ReactDOM.render(
             </Routes>
         </BrowserRouter>
     </React.StrictMode>,
-    document.getElementById('root')
+    document.getElementById('root'),
 );

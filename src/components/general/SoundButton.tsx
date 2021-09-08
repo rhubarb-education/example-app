@@ -8,7 +8,7 @@ const SoundButton = () => {
     const playSound = () => {
         console.log('Playing sound...');
         sound.play();
-    }
+    };
 
     return (
         <div>
@@ -16,6 +16,6 @@ const SoundButton = () => {
             <button onClick={playSound}>Play Sound</button>
         </div>
     );
-}
+};
 
 export default SoundButton;

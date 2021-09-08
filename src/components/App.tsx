@@ -5,8 +5,7 @@ import { createGlobalStyle } from 'styled-components';
 import EndSlide from './units/EndSlide';
 import StartSlide from './units/StartSlide';
 
-export type ModuleData = {
-};
+export type ModuleData = {};
 
 function App() {
     const name = 'Example App';
@@ -14,19 +13,16 @@ function App() {
     const defaultHeader = <h1>Example Learning Module</h1>;
     const defaultFooter = <h1>Default Footer</h1>;
 
-    const slides: any[] = [
-        StartSlide,
-        EndSlide,
-    ];
+    const slides: any[] = [StartSlide, EndSlide];
 
     const onNextSlide = (index: number) => {
         console.debug('Next slide: ', index);
-    }
+    };
 
     const onComplete = () => {
         alert('Course complete.');
     };
-    
+
     return (
         <>
             <GlobalStyle />
@@ -42,7 +38,6 @@ function App() {
         </>
     );
 }
-
 
 const GlobalStyle = createGlobalStyle<{ theme: any }>`
     #root, body, html {
