@@ -7,8 +7,8 @@ import App from './components/App';
 
 const config: IConkerConfig = {
     endpoint: process.env.REACT_APP_CONKER_URL ?? '',
-    key: process.env.REACT_APP_CONKER_CLIENT_USER ?? '',
-    secret: process.env.REACT_APP_CONKER_CLIENT_PASS ?? '',
+    key: process.env.REACT_APP_CONKER_CLIENT_KEY ?? '',
+    secret: process.env.REACT_APP_CONKER_CLIENT_SECRET ?? '',
 }
 
 Conker.init(config);
