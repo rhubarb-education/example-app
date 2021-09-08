@@ -1,6 +1,6 @@
-# Example Create React App course
+<img src="https://rhubarb.ams3.cdn.digitaloceanspaces.com/logo-leaf-blue.png" width="64" alt="Rhubarb Education">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An example Rhubarb Education bespoke learning module, bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Installation
 This package uses private packages, contact Rhubarb Education to be added to the nessersary repositories.
@@ -10,7 +10,7 @@ Install the dependancies:
 yarn install
 ```
 
-Rename the environment file (`.env.example` --> `.env`) and fill with your Conker API endpoint & course id.
+Rename the environment file (`.env.example` --> `.env`) and fill with your xAPI endpoint and credentials if applicable.
 
 Build and run the course:
 ```
