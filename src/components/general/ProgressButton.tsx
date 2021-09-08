@@ -1,5 +1,4 @@
 import { Conker } from 'conker-client';
-import React from 'react';
 
 const ProgressButton = () => {
     const reportProgress = () => {
@@ -13,7 +12,7 @@ const ProgressButton = () => {
     return (
        
         <div>
-            <p>This button should report progress:</p>
+            <p>This button should report progress, if enabled:</p>
             <button onClick={reportProgress}>Report Progress</button>
         </div>
     );

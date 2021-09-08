@@ -1,26 +1,67 @@
+import { Module } from 'conker-framework';
+import 'conker-framework/dist/conker-framework.cjs.development.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../assets/css/App.css';
-import logo from '../assets/images/logo-leaf-blue.png';
-import ProgressButton from './ProgressButton';
-import SoundButton from './SoundButton';
+import { createGlobalStyle } from 'styled-components';
+import EndSlide from './units/EndSlide';
+import StartSlide from './units/StartSlide';
+
+export type ModuleData = {
+};
 
 function App() {
-    return (
-        <div className="App">
-            <header className="App-header large">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1>
-                    Example Learning Module
-        </h1>
-                <p>Clicking the link below should navigate to the example topic page.</p>
-                <h1><Link to="/topic-1" className="App-link">Topic 1</Link></h1>
+    const name = 'Example App';
 
-                <SoundButton />
-                <ProgressButton />
-            </header>
-        </div>
+    const defaultHeader = <h1>Example Learning Module</h1>;
+    const defaultFooter = <h1>Default Footer</h1>;
+
+    const slides: any[] = [
+        StartSlide,
+        EndSlide,
+    ];
+
+    const onNextSlide = (index: number) => {
+        console.debug('Next slide: ', index);
+    }
+
+    const onComplete = () => {
+        alert('Course complete.');
+    };
+    
+    return (
+        <>
+            <GlobalStyle />
+            <Module
+                name={name}
+                slides={slides}
+                onNextSlide={onNextSlide}
+                onComplete={onComplete}
+                data={{} as ModuleData}
+                defaultHeader={defaultHeader}
+                defaultFooter={defaultFooter}
+            />
+        </>
     );
 }
+
+
+const GlobalStyle = createGlobalStyle<{ theme: any }>`
+    #root, body, html {
+        font-size: 16px !important;
+    }
+
+    body {
+        font-size: 1.125rem;
+        margin: 0;
+        font-family: "Century Gothic", "Arial", -apple-system, BlinkMacSystemFont, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    .app-wrapper {
+        background-color: #ffffff;
+    }
+`;
 
 export default App;
