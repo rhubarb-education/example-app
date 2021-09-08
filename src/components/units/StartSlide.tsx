@@ -5,7 +5,7 @@ import SoundButton from '../general/SoundButton';
 
 const StartSlide = ({ defaultHeader, nextSlide }: ISlide) => {
     const footer = (
-        <Button onClick={() => nextSlide()} variant="info">
+        <Button onClick={nextSlide} variant="info">
             Next
         </Button>
     );
