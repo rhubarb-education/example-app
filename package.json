@@ -39,7 +39,8 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "ie 11"
     ],
     "development": [
       "last 1 chrome version",
@@ -48,6 +49,10 @@
     ]
   },
   "devDependencies": {
-    "@types/howler": "^2.2.2"
+    "@types/howler": "^2.2.2",
+    "prettier": "2.3.2"
+  },
+  "engines": {
+    "npm": "please-use-yarn"
   }
 }
