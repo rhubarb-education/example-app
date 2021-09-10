@@ -1,5 +1,4 @@
 import { Module } from 'conker-framework';
-import 'conker-framework/dist/conker-framework.cjs.development.css';
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import EndSlide from './units/EndSlide';
