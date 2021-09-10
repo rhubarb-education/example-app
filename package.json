@@ -11,7 +11,7 @@
     "@types/react": "^17.0.9",
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.14",
-    "conker-client": "git+ssh://git@github.com:rhubarb-education/conker-client.git",
+    "conker-client": "git+ssh://git@github.com:rhubarb-education/client.git",
     "conker-framework": "git+ssh://git@github.com:rhubarb-education/framework.git",
     "history": "^5.0.0",
     "howler": "^2.2.1",
